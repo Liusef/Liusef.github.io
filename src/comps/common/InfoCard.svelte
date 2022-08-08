@@ -11,7 +11,7 @@
     <div class="outer grey-bg">
         <div style:background-image={`url(${info.img})`} class="img"></div>
         <div class="inner">
-            <div class="h3">
+            <div class="h3" style="line-height: 1em; margin-bottom: 0.25rem">
                 {info.name}
             </div>
             <p class="no-margin-top" class:no-margin-bottom={info.sub2}>
