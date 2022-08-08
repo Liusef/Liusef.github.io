@@ -26,7 +26,8 @@
     }
 
     .center-text {
-        margin: 0 4rem;
+        margin-left: 8vw;
+        margin-right: 2rem;
     }
 
     @media only screen and (max-device-width: 700px) {
