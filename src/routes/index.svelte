@@ -5,6 +5,10 @@
   import Skills from "../comps/Skills.svelte";
 </script>
 
+<title>
+    Joseph Liu
+</title>
+
 <Home/>
 <About/>
 <Stuff/>
