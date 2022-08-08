@@ -67,7 +67,7 @@
 
     .img {
         height: 200px;
-        width: 350px;
+        width: 340px;
         background-size: cover;
         background-position: center;
         border-radius: 8px 8px 0 0;
