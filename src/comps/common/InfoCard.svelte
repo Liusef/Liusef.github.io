@@ -54,7 +54,7 @@
 <style>
 
     .outer {
-        width: 350px;
+        width: 340px;
         height: 500px;
         max-width: 80vw;
         max-height: 100vh;
