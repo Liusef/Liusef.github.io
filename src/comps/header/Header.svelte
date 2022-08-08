@@ -1,9 +1,9 @@
 <script>
-    import src from '../assets/icon.png';
+    import src from '../../assets/icon.png';
     import NavBar from "./NavBar.svelte";
     import MobileNavBar from "./MobileNavBar.svelte";
     import {fly} from 'svelte/transition'
-    import links from '../vars/Links.js'
+    import links from '../../vars/Links.js'
 
     export let breakpointVh = 20
 
@@ -46,7 +46,7 @@
     <div class="mobilemenu-out mobile-menu" transition:fly={{x: 150}}>
             {#each Object.keys(links) as key, i}
                 <div transition:fly={{x: 15, delay: 60 * i}} on:click={() => open = false}>
-                    <a href={`#${key}`} class="white-link h3 bold">
+                    <a href={`#${key}`} class="white-link h3 allcaps">
                         {key.toUpperCase()}
                     </a>
                 </div>
@@ -67,7 +67,6 @@
         --header-scrolled-img-margin: 0.5rem;
         --header-top-font-size: 1.25rem;
         --header-scrolled-font-size: 1.25rem;
-        --header-active-font-size: 1.5rem;
 
         --header-background: #000000aa;
         --header-blur-amount: 6px;
@@ -171,7 +170,7 @@
         display: none;
     }
 
-    @media (max-width: 925px)
+    @media (max-width: 825px)
     {
 
         .ldiv {

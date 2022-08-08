@@ -1,6 +1,7 @@
 <script>
     import '../app.css'
-    import Header from "../header/Header.svelte";
+    import Header from "../comps/header/Header.svelte";
+    import Footer from "../comps/Footer.svelte";
 </script>
 
 <header>
@@ -8,3 +9,7 @@
 </header>
 
 <slot/>
+
+<footer>
+    <Footer/>
+</footer>
