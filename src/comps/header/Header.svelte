@@ -1,9 +1,10 @@
 <script>
     import src from '../../assets/icon.png';
+    import * as sst from 'svelte-scrollto'
     import NavBar from "./NavBar.svelte";
     import MobileNavBar from "./MobileNavBar.svelte";
     import {fly} from 'svelte/transition'
-    import links from '../../vars/Links.js'
+    import links from '../../vars/Nav.js'
 
     export let breakpointVh = 20
 
@@ -17,6 +18,7 @@
     }
 
     $: scrolled = (scroll > vhToPx(breakpointVh) || scroll > vhToPx(breakpointVh));
+
 </script>
 
 <svelte:window bind:scrollY={scroll} bind:outerHeight={vpHeight}/>
@@ -25,7 +27,7 @@
     <header class='title' class:scrolled>
         <div class="title-container">
             <div class='ldiv'>
-                <a href="/" on:click={() => {open = false}}>
+                <a class="clickable" on:click={() => {open = false; sst.scrollToTop()}}>
                     <img {src} class='logo-img' class:scrolled id="logo"/>
                 </a>
             </div>
@@ -44,9 +46,9 @@
 
 {#if open}
     <div class="mobilemenu-out mobile-menu" transition:fly={{x: 150}}>
-            {#each Object.keys(links) as key, i}
+            {#each links as key, i}
                 <div transition:fly={{x: 15, delay: 60 * i}} on:click={() => open = false}>
-                    <a href={`#${key}`} class="white-link h3 allcaps">
+                    <a on:click={() => sst.scrollTo({element: `#${key}`})} class="white-link clickable h3 allcaps">
                         {key.toUpperCase()}
                     </a>
                 </div>
@@ -61,12 +63,12 @@
         --header-mobile-transition: all 0.3s cubic-bezier(0, 0.6, 0.4, 1);
         --header-transition-delay: 0.02s;
 
-        --header-top-height:  10rem;
-        --header-scrolled-height: 5rem;
-        --header-top-img-margin: 1.5rem;
-        --header-scrolled-img-margin: 0.5rem;
-        --header-top-font-size: 1.25rem;
-        --header-scrolled-font-size: 1.25rem;
+        --header-top-height:  6rem;
+        --header-scrolled-height: 4rem;
+        --header-top-img-margin: 1rem;
+        --header-scrolled-img-margin: 0.6rem;
+        --header-top-font-size: 1rem;
+        --header-scrolled-font-size: 1rem;
 
         --header-background: #000000aa;
         --header-blur-amount: 6px;
@@ -170,7 +172,7 @@
         display: none;
     }
 
-    @media (max-width: 825px)
+    @media (max-width: 700px)
     {
 
         .ldiv {

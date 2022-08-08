@@ -1,15 +1,19 @@
 <script>
     import bg from '../assets/bg1.jpg'
+    import Socials from "./common/Socials.svelte";
 </script>
 
-<div class="home-out" style:background-image={`url(${bg})`}>
-    <div class="row-center max-height center-text">
+<div class="home-out" style:background-image={`url(${bg})`} id="home">
+    <div class="row-center max-height center-text relative">
         <div>
             <p class="h1 half-ls">
                 I'm Joseph
             <p class="text half-ls">
                 I'm a second year undergraduate studying Computer Science at the Georgia Institute of Technology.
             </p>
+        </div>
+        <div class="social-spot">
+            <Socials/>
         </div>
     </div>
 </div>
@@ -26,6 +30,7 @@
     }
 
     .center-text {
+        width: 80vw;
         margin-left: 8vw;
         margin-right: 2rem;
     }
@@ -34,6 +39,11 @@
         .home-out {
             background-attachment: scroll;
         }
+    }
+
+    .social-spot {
+        position: absolute;
+        bottom: 10vh;
     }
 
 </style>

@@ -1,13 +1,13 @@
 <script>
-
-    import links from '../../vars/Links.js'
+    import * as sst from 'svelte-scrollto'
+    import links from '../../vars/Nav.js'
 </script>
 
 
 <div class="flex-out">
 
-    {#each Object.keys(links) as key}
-        <a href={`#${key}`} class="text white-link allcaps">
+    {#each links as key}
+        <a on:click={() => sst.scrollTo({element: `#${key}`})} class="white-link clickable allcaps">
             {key}
         </a>
     {/each}

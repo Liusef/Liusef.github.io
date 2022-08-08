@@ -10,14 +10,26 @@ body {
     padding: 3rem 4rem;
 }
 
+.relative {
+    position: relative;
+}
+
 .grey-bg {
     background-color: #151b25;
 }
 
-@media (max-width: 825px) {
+@media (max-width: 700px) {
     .body {
         padding: 3rem 2rem;
     }
+}
+
+.more-padding {
+    padding: 2rem 0;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 .max-height {
@@ -46,7 +58,7 @@ body {
     -moz-user-select: none;
 }
 
-@media (max-width: 825px) {
+@media (max-width: 700px) {
     .mobile-center {
         display: flex;
         flex-direction: column;
@@ -63,6 +75,10 @@ body {
 .link {
     text-decoration: none;
     color: cyan;
+}
+
+.link-fill {
+    fill: cyan;
 }
 
 .white-link {
@@ -124,7 +140,7 @@ body {
     margin: 0.5rem 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
     .h1 {
         font-size: 3.5rem;
     }
