@@ -11,54 +11,6 @@
     "file": "immutable/assets/globe-7d6ebfe1.svg",
     "src": "src/assets/globe.svg"
   },
-  "src/assets/exp/eb.jpg": {
-    "file": "immutable/assets/eb-696b0a09.jpg",
-    "src": "src/assets/exp/eb.jpg"
-  },
-  "src/assets/exp/thing.jpg": {
-    "file": "immutable/assets/thing-571fc9b6.jpg",
-    "src": "src/assets/exp/thing.jpg"
-  },
-  "src/assets/webasset.svg": {
-    "file": "immutable/assets/webasset-39547f0a.svg",
-    "src": "src/assets/webasset.svg"
-  },
-  "src/assets/exp/lrt.png": {
-    "file": "immutable/assets/lrt-f925455e.png",
-    "src": "src/assets/exp/lrt.png"
-  },
-  "src/assets/edu/gt.png": {
-    "file": "immutable/assets/gt-057f4d33.png",
-    "src": "src/assets/edu/gt.png"
-  },
-  "src/assets/edu/wvc.jpg": {
-    "file": "immutable/assets/wvc-a85fe43f.jpg",
-    "src": "src/assets/edu/wvc.jpg"
-  },
-  "src/assets/exp/mn.png": {
-    "file": "immutable/assets/mn-8c4c6cf9.png",
-    "src": "src/assets/exp/mn.png"
-  },
-  "src/assets/edu/lhs.jpg": {
-    "file": "immutable/assets/lhs-c8150128.jpg",
-    "src": "src/assets/edu/lhs.jpg"
-  },
-  "src/assets/proj/gba.png": {
-    "file": "immutable/assets/gba-0fab1247.png",
-    "src": "src/assets/proj/gba.png"
-  },
-  "src/assets/edu/ucb.png": {
-    "file": "immutable/assets/ucb-7742f2a8.png",
-    "src": "src/assets/edu/ucb.png"
-  },
-  "src/assets/proj/goat.png": {
-    "file": "immutable/assets/goat-09e70e23.png",
-    "src": "src/assets/proj/goat.png"
-  },
-  "src/assets/proj/maze.png": {
-    "file": "immutable/assets/maze-edfc3f00.png",
-    "src": "src/assets/proj/maze.png"
-  },
   "src/assets/lang/java.png": {
     "file": "immutable/assets/java-22989079.png",
     "src": "src/assets/lang/java.png"
@@ -66,18 +18,6 @@
   "src/assets/lang/cs.png": {
     "file": "immutable/assets/cs-b0631b21.png",
     "src": "src/assets/lang/cs.png"
-  },
-  "src/assets/lang/js.png": {
-    "file": "immutable/assets/js-78c8dae8.png",
-    "src": "src/assets/lang/js.png"
-  },
-  "src/assets/proj/stats.png": {
-    "file": "immutable/assets/stats-054d7f6b.png",
-    "src": "src/assets/proj/stats.png"
-  },
-  "src/assets/lang/svelte.svg": {
-    "file": "immutable/assets/svelte-dc8a06dc.svg",
-    "src": "src/assets/lang/svelte.svg"
   },
   "src/assets/lang/jetbrains.png": {
     "file": "immutable/assets/jetbrains-b4deffa8.png",
@@ -87,32 +27,92 @@
     "file": "immutable/assets/vsc-55dd6256.png",
     "src": "src/assets/lang/vsc.png"
   },
-  "src/assets/proj/tgstickers.png": {
-    "file": "immutable/assets/tgstickers-ff10eb89.png",
-    "src": "src/assets/proj/tgstickers.png"
+  "src/assets/lang/js.png": {
+    "file": "immutable/assets/js-78c8dae8.png",
+    "src": "src/assets/lang/js.png"
+  },
+  "src/assets/lang/svelte.svg": {
+    "file": "immutable/assets/svelte-dc8a06dc.svg",
+    "src": "src/assets/lang/svelte.svg"
   },
   "src/assets/creative/csp.png": {
     "file": "immutable/assets/csp-33455dee.png",
     "src": "src/assets/creative/csp.png"
   },
+  "src/assets/creative/cc.png": {
+    "file": "immutable/assets/cc-1988a5a0.png",
+    "src": "src/assets/creative/cc.png"
+  },
   "src/assets/creative/procreate.png": {
     "file": "immutable/assets/procreate-2109f49c.png",
     "src": "src/assets/creative/procreate.png"
-  },
-  "src/assets/proj/gitlet.png": {
-    "file": "immutable/assets/gitlet-fe9af2aa.png",
-    "src": "src/assets/proj/gitlet.png"
   },
   "src/assets/lang/py.png": {
     "file": "immutable/assets/py-11e0f693.png",
     "src": "src/assets/lang/py.png"
   },
-  "src/assets/creative/cc.png": {
-    "file": "immutable/assets/cc-1988a5a0.png",
-    "src": "src/assets/creative/cc.png"
+  "src/assets/webasset.svg": {
+    "file": "immutable/assets/webasset-39547f0a.svg",
+    "src": "src/assets/webasset.svg"
+  },
+  "src/assets/proj/gba.png": {
+    "file": "immutable/assets/gba-0fab1247.png",
+    "src": "src/assets/proj/gba.png"
+  },
+  "src/assets/proj/goat.png": {
+    "file": "immutable/assets/goat-09e70e23.png",
+    "src": "src/assets/proj/goat.png"
+  },
+  "src/assets/proj/maze.png": {
+    "file": "immutable/assets/maze-edfc3f00.png",
+    "src": "src/assets/proj/maze.png"
+  },
+  "src/assets/proj/stats.png": {
+    "file": "immutable/assets/stats-054d7f6b.png",
+    "src": "src/assets/proj/stats.png"
+  },
+  "src/assets/exp/eb.jpg": {
+    "file": "immutable/assets/eb-696b0a09.jpg",
+    "src": "src/assets/exp/eb.jpg"
+  },
+  "src/assets/exp/thing.jpg": {
+    "file": "immutable/assets/thing-571fc9b6.jpg",
+    "src": "src/assets/exp/thing.jpg"
+  },
+  "src/assets/proj/gitlet.png": {
+    "file": "immutable/assets/gitlet-fe9af2aa.png",
+    "src": "src/assets/proj/gitlet.png"
+  },
+  "src/assets/proj/tgstickers.png": {
+    "file": "immutable/assets/tgstickers-ff10eb89.png",
+    "src": "src/assets/proj/tgstickers.png"
+  },
+  "src/assets/edu/gt.png": {
+    "file": "immutable/assets/gt-057f4d33.png",
+    "src": "src/assets/edu/gt.png"
+  },
+  "src/assets/edu/wvc.jpg": {
+    "file": "immutable/assets/wvc-a85fe43f.jpg",
+    "src": "src/assets/edu/wvc.jpg"
+  },
+  "src/assets/exp/lrt.png": {
+    "file": "immutable/assets/lrt-f925455e.png",
+    "src": "src/assets/exp/lrt.png"
+  },
+  "src/assets/edu/lhs.jpg": {
+    "file": "immutable/assets/lhs-c8150128.jpg",
+    "src": "src/assets/edu/lhs.jpg"
+  },
+  "src/assets/exp/mn.png": {
+    "file": "immutable/assets/mn-8c4c6cf9.png",
+    "src": "src/assets/exp/mn.png"
+  },
+  "src/assets/edu/ucb.png": {
+    "file": "immutable/assets/ucb-7742f2a8.png",
+    "src": "src/assets/edu/ucb.png"
   },
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-863968f5.js",
+    "file": "immutable/start-1dfdd0e1.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -150,7 +150,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-1fb8af85.js",
+    "file": "immutable/pages/index.svelte-e9d869b4.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -159,7 +159,7 @@
       "_Socials-81894c13.js"
     ],
     "css": [
-      "immutable/assets/index-75d67199.css"
+      "immutable/assets/index-e1865a41.css"
     ],
     "assets": [
       "immutable/assets/bg1-1046a284.jpg",
@@ -213,7 +213,7 @@
     "src": "src/routes\\__layout.css"
   },
   "src/routes\\index.css": {
-    "file": "immutable/assets/index-75d67199.css",
+    "file": "immutable/assets/index-e1865a41.css",
     "src": "src/routes\\index.css"
   }
 }
