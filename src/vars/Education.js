@@ -63,7 +63,7 @@ export default [
         img: lhs,
         name: 'Lynbrook High School',
         subt: 'San Jose, CA',
-        desc: 'Attend Lynbrook High School for general studies',
+        desc: 'Attend Lynbrook High School for general studies.',
         adesc: [
             'Graduated: Jun 2021',
             'Unweighted GPA: 3.969'
