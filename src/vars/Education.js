@@ -45,7 +45,7 @@ export default [
         img: wvc,
         name: 'West Valley College',
         subt: 'Saratoga, CA',
-        desc: 'Attended West Valley College for the Fall 2020 term. Took MATH 04a: Intermediate (Multivariable) ' +
+        desc: 'Attended West Valley College for the Fall 2020 term. Took MATH 04A: Intermediate (Multivariable) ' +
               'Calculus.',
         adesc: [
             'Computer Science and Engineering',
