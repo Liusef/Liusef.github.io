@@ -53,21 +53,26 @@
 
 <style>
 
+    :root {
+        --infocard-width: 340px;
+        --infocard-max-width: 80vw;
+    }
+
     .outer {
-        width: 340px;
-        height: 500px;
-        max-width: 80vw;
-        max-height: 100vh;
+        width: var(--infocard-width);
+        max-width: var(--infocard-max-width);
+        height: 520px;
         border-radius: 8px;
     }
 
     .inner {
-        margin: 1rem 1.5rem;
+        margin: 1.5rem 1.25rem;
     }
 
     .img {
         height: 200px;
-        width: 340px;
+        width: var(--infocard-width);
+        max-width: var(--infocard-max-width);
         background-size: cover;
         background-position: center;
         border-radius: 8px 8px 0 0;
