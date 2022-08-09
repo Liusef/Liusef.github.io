@@ -27,7 +27,7 @@ export default [
         img: gba,
         name: 'Game Boy Advance Platformer',
         subt: 'Apr 2022',
-        desc: 'A simple platforming game for the Game Boy Advance. Written in C and use MMIO to draw to the display ' +
+        desc: 'A simple platforming game for the Game Boy Advance. Written in C and uses MMIO to draw to the display ' +
               'and read user input.',
         links: [
             {
