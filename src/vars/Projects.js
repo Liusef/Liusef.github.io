@@ -1,6 +1,7 @@
 import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
 import {siGithub} from "simple-icons/icons";
+import zm from '../assets/proj/zoom.png'
 import tspm from '../assets/proj/tgstickers.png'
 import gba from '../assets/proj/gba.png'
 import dgd from '../assets/proj/goat.png'
@@ -9,6 +10,19 @@ import git from '../assets/proj/gitlet.png'
 import lang from '../assets/proj/stats.png'
 
 export default [
+    {
+        img: zm,
+        name: 'Zoom Meeting Manager',
+        subt: 'Aug 2022 - Aug 2022',
+        desc: 'An app to keep track of zoom meetings and quickly join them without hopping through the browser.',
+        links: [
+            {
+                name: 'GitHub Repo',
+                icon: siGithub,
+                link: 'https://github.com/Liusef/ZoomMeetings'
+            },
+        ]
+    },
     {
         img: tspm,
         name: 'Telegram Sticker Pack Manager',
