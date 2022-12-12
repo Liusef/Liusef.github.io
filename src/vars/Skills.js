@@ -55,10 +55,11 @@ export default {
         {name: 'Unity', icon: siUnity, href: 'https://unity.com/'}
     ],
     Relevant_Coursework: [
+        {name: 'Computer Organization'},
+        {name: 'Computer Systems and Networks'},
         {name: 'Object Oriented Design & Analysis'},
         {name: 'Object Oritented Programming'},
         {name: 'Data Structures and Algorithms'},
-        {name: 'Computer Organization'},
         {name: 'Differential Calculus'},
         {name: 'Integral Calculus'},
         {name: 'Multivariable Calculus'},
