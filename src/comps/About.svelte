@@ -1,5 +1,5 @@
 <div class="body grey-bg" id="about">
-    <div class="more-padding">
+    <div class="more-padding" style:max-width="50rem">
         <div class="h2">
             About Me
         </div>
@@ -7,13 +7,13 @@
             Hello! I'm Joseph Liu, a second year undergraduate student at Georgia Tech! I'm currently studying computer
             science with concentrations in Artificial Intelligence and Systems/Architecture.
         <p class="text">
-            I've worked with the Georgia Tech Empathy Bytes VIP (Vertically Integrated Project) where I utilized Unity and
-            AR/VR technologies to develop interactive experiences.
+            During the summer of 2023, I will be working with GEICO as a Software Engineering Intern.
+            I've also worked with the Georgia Tech Empathy Bytes VIP (Vertically Integrated Project) where I utilized
+            Unity and AR/VR technologies to develop interactive experiences.
         <p class="text">
             Beyond computer science and software development, I have experience with media technologies and creative
-            applications. Previously, I served as the VP of Media at Lynbrook Robotics, where oversaw many of the media
-            related tasks on the team. I'm also proficient in many professional creative programs, such as
-            Adobe Premiere Pro, After Effects, Photoshop, Lightroom Classic, and CLIP Studio Paint.
+            applications. Previously, I served as the VP of Media at Lynbrook Robotics, where I learned creative tools
+            such as Adobe Photoshop, Premiere Pro, and other Creative Cloud tools.
         </p>
     </div>
 </div>

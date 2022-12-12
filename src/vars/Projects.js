@@ -11,24 +11,13 @@ import lang from '../assets/proj/stats.png'
 
 export default [
     {
-        img: zm,
-        name: 'Zoom Meeting Manager',
-        subt: 'Aug 2022 - Aug 2022',
-        desc: 'An app to keep track of zoom meetings and quickly join them without hopping through the browser.',
-        links: [
-            {
-                name: 'GitHub Repo',
-                icon: siGithub,
-                link: 'https://github.com/Liusef/ZoomMeetings'
-            },
-        ]
-    },
-    {
         img: tspm,
         name: 'Telegram Sticker Pack Manager',
-        subt: 'Aug 2021 - Aug 2022',
-        desc: 'A program to automate Sticker bot and make managing sticker packs less tedious. Written in C#/XAML ' +
-              'and uses asynchronous programming, smart caching, and multithreading.',
+        subt: 'WinUI, C#, XAML, .NET Core',
+        sub2: 'Aug 2021 - Aug 2022',
+        desc: 'Automates Sticker bot to make managing sticker packs less tedious. ' +
+              'Communicates with MTProto and uses asynchronous programming, caching, and parallelization ' +
+              'to increase performance.',
         links: [
             {
                 name: 'GitHub Repo',
@@ -40,8 +29,9 @@ export default [
     {
         img: gba,
         name: 'Game Boy Advance Platformer',
-        subt: 'Apr 2022',
-        desc: 'A simple platforming game for the Game Boy Advance. Written in C and uses MMIO to draw to the display ' +
+        subt: 'C (language), GCC, GNU Make',
+        sub2: 'Apr 2022',
+        desc: 'A simple platforming game for the Game Boy Advance. Uses Memory Mapped I/O to draw to the display ' +
               'and read user input.',
         links: [
             {
@@ -54,9 +44,10 @@ export default [
     {
         img: dgd,
         name: 'Dance Goat Dance',
-        subt: 'Mar 2022',
-        desc: 'An interactive, educational, and fun website all about Goats! Submission for Hexlabs Horizons 2022. ' +
-              'Won the Most Creative award.',
+        subt: 'JavaScript, HTML5, CSS3',
+        sub2: 'Mar 2022',
+        desc: 'An interactive website all about goats writted in under 24 hours! ' +
+              'Submission for Hexlabs Horizons 2022. Won the Most Creative award.',
         links: [
             {
                 name: 'Goat Website',
@@ -77,10 +68,11 @@ export default [
     },
     {
         img: maze,
-        name: 'Maze Image Solver',
-        subt: 'May 2021',
-        desc: 'A program that reads in a maze image, converts it to a graph data structure and finds the shortest ' +
-              'path from start to end using the A* Search Algorithm. Uses Java and JavaFX.',
+        name: 'Maze Pathfinder',
+        subt: 'Java, JavaFX',
+        sub2: 'May 2021',
+        desc: 'A program that reads in a maze image, converts it to a graph data structure using Computer Vision ' +
+              'and finds the shortest path from start to end using the A* Search Algorithm.',
         links: [
             {
                 name: 'GitHub Repo',
@@ -92,16 +84,18 @@ export default [
     {
         img: git,
         name: 'Gitlet: Version Control System',
-        subt: 'Jul 2020',
+        subt: 'Java',
+        sub2: 'Jul 2020',
         desc: 'A basic command line implementation of git from scratch. Supports commits, branching, resetting, ' +
-              'merging, etc. Written in Java.',
+              'merging, etc.',
     },
     {
         img: lang,
         name: 'Comparing Tongue Movement Between Languages',
-        subt: 'May 2020',
+        subt: 'Python, TKinter',
+        sub2: 'May 2020',
         desc: 'Converts written text to the International Phonetic Alphabet and analzyes tongue movement between ' +
-              'English and French. Written in Python.',
+              'English and French.',
         links: [
             {
                 name: "GitHub Repo",

@@ -31,8 +31,8 @@ export default [
         name: 'Empathy Bytes',
         subt: 'Student Researcher and Developer',
         sub2: 'Aug 2021 - Present',
-        desc: 'Empathy Bytes is a Georgia Tech VIP (Vertically Integrated project). We work with cutting edge' +
-              'technologies like AR/VR to help share experiences and spread empathy.',
+        desc: 'Empathy Bytes is a Georgia Tech VIP (Vertically Integrated project). We work with cutting edge ' +
+              'technologies like AR/VR to help spread awareness of the communities at Georgia Tech.',
         links: [
             {
                 name: 'Empathy Bytes Website',
