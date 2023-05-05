@@ -1,10 +1,10 @@
 <script>
     import src from '../../assets/icon.png';
-    import * as sst from 'svelte-scrollto'
     import NavBar from "./NavBar.svelte";
     import MobileNavBar from "./MobileNavBar.svelte";
     import {fly} from 'svelte/transition'
     import links from '../../vars/Nav.js'
+    import {scrollToAnchor, scrollToTop} from "../../utils.js";
 
     export let breakpointVh = 20
 
@@ -27,7 +27,7 @@
     <header class='title' class:scrolled>
         <div class="title-container">
             <div class='ldiv'>
-                <a class="clickable" on:click={() => {open = false; sst.scrollToTop()}}>
+                <a class="clickable" on:click={() => {open = false; scrollToTop()}}>
                     <img {src} class='logo-img' class:scrolled id="logo"/>
                 </a>
             </div>
@@ -48,7 +48,7 @@
     <div class="mobilemenu-out mobile-menu" transition:fly={{x: 150}}>
             {#each links as key, i}
                 <div transition:fly={{x: 15, delay: 60 * i}} on:click={() => open = false}>
-                    <a on:click={() => sst.scrollTo({element: `#${key}`})} class="white-link clickable h3 allcaps">
+                    <a on:click={() => scrollToAnchor(key)} class="white-link clickable h3 allcaps">
                         {key.toUpperCase()}
                     </a>
                 </div>

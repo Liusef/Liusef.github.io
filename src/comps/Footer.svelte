@@ -1,6 +1,7 @@
 <script>
-    import * as sst from "svelte-scrollto"
     import Socials from "./common/Socials.svelte";
+    import {browser} from "$app/environment";
+    import {scrollToTop} from "../utils.js";
 </script>
 
 <div class="body footer-flex">
@@ -8,7 +9,7 @@
         You've reached the end.
     </div>
     <div class="row-center" style:margin-top="-0.75rem">
-        <div class="clickable" on:click={() => sst.scrollToTop()} style:opacity="50%">
+        <div class="clickable" on:click={scrollToTop} style:opacity="50%">
             Go back to top
         </div>
     </div>

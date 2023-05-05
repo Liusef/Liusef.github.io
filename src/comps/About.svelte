@@ -4,10 +4,10 @@
             About Me
         </div>
         <p class="text">
-            Hello! I'm Joseph Liu, a second year undergraduate student at Georgia Tech! I'm currently studying computer
+            Hello! I'm Joseph Liu, a third year undergraduate student at Georgia Tech! I'm currently studying computer
             science with concentrations in Artificial Intelligence and Systems/Architecture.
         <p class="text">
-            During the summer of 2023, I will be working with GEICO as a Software Engineering Intern.
+            During the summer of 2023, I will be working with GEICO as an SDP (Software Development / Programming) intern.
             I've also worked with the Georgia Tech Empathy Bytes VIP (Vertically Integrated Project) where I utilized
             Unity and AR/VR technologies to develop interactive experiences.
         <p class="text">

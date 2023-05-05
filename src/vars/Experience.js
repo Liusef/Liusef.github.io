@@ -1,11 +1,31 @@
 import mn from '../assets/exp/mn.png'
-import eb from '../assets/exp/eb.jpg'
-import lrt from '../assets/exp/lrt.png'
+import eb from '../assets/exp/eb.png'
+import lrt from '../assets/exp/lrt.jpg'
 import fl from '../assets/exp/thing.jpg'
 import wa from '../assets/webasset.svg'
 import globe from '../assets/globe.svg'
 
 export default [
+    {
+        img: eb,
+        name: 'Empathy Bytes',
+        subt: 'Student Researcher and Developer',
+        sub2: 'Aug 2021 - Dec 2022',
+        desc: 'Empathy Bytes is a Georgia Tech VIP. We work with cutting edge ' +
+            'technologies like XR to help spread awareness of the communities at Georgia Tech.',
+        links: [
+            {
+                name: 'Empathy Bytes Website',
+                img: globe,
+                link: 'https://educast.library.gatech.edu/'
+            },
+            {
+                name: 'VIP Info Page',
+                img: wa,
+                link: 'https://www.vip.gatech.edu/teams/vwc'
+            }
+        ]
+    },
     {
         img: mn,
         name: 'Mathnasium',
@@ -23,26 +43,6 @@ export default [
                 name: 'Mathnasium of MV-LA website',
                 img: globe,
                 link: 'https://www.mathnasium.com/mountainviewlosaltos'
-            }
-        ]
-    },
-    {
-        img: eb,
-        name: 'Empathy Bytes',
-        subt: 'Student Researcher and Developer',
-        sub2: 'Aug 2021 - Present',
-        desc: 'Empathy Bytes is a Georgia Tech VIP (Vertically Integrated project). We work with cutting edge ' +
-              'technologies like AR/VR to help spread awareness of the communities at Georgia Tech.',
-        links: [
-            {
-                name: 'Empathy Bytes Website',
-                img: globe,
-                link: 'https://educast.library.gatech.edu/'
-            },
-            {
-                name: 'VIP Info Page',
-                img: wa,
-                link: 'https://www.vip.gatech.edu/teams/vwc'
             }
         ]
     },

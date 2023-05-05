@@ -1,6 +1,6 @@
 import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
-import gt from '../assets/edu/gt.png'
+import gt from '../assets/edu/gt.jpg'
 import ucb from '../assets/edu/ucb.png'
 import wvc from '../assets/edu/wvc.jpg'
 import lhs from '../assets/edu/lhs.jpg'
@@ -10,7 +10,7 @@ export default [
         img: gt,
         name: 'Georgia Tech',
         subt: 'Atlanta, GA',
-        desc: 'Currently an undergrad studying Computer Science with threads in Intelligence and Sys/Arch.',
+        desc: 'Currently an undergraduate studying Computer Science with threads in Intelligence and Sys/Arch.',
         adesc: [
             'Computer Science B.S.',
             'Expected Graduation: Dec 2024',
@@ -28,7 +28,7 @@ export default [
         img: ucb,
         name: 'UC Berkeley',
         subt: 'Berkeley, CA',
-        desc: 'Attended UC Berkeley for the 2020 Summer Session. Took CS 61BL: Data Structures and Algorithms.',
+        desc: 'Attended for Berkeley\'s Pre-college scholars program. Took CS 61BL: Data Structures and Algorithms.',
         adesc: [
             'Letters & Sciences Undeclared',
             'GPA: 4.0'
@@ -45,7 +45,7 @@ export default [
         img: wvc,
         name: 'West Valley College',
         subt: 'Saratoga, CA',
-        desc: 'Attended West Valley College for the Fall 2020 term. Took MATH 04A: Intermediate (Multivariable) ' +
+        desc: 'Attended West Valley College for the Fall 2020 term for concurrent enrollment. Took MATH 04A: Intermediate (Multivariable) ' +
               'Calculus.',
         adesc: [
             'Computer Science and Engineering',

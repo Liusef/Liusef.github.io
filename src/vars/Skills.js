@@ -21,7 +21,8 @@ import {
     siAdobephotoshop,
     siAdobelightroomclassic,
     siAdobepremierepro,
-    siAdobeaftereffects, siUnity, siHtml5, siWebauthn, siDotnet, siXaml, siNodedotjs, siGnu, siLinux
+    siAdobeaftereffects, siUnity, siHtml5, siWebauthn, siDotnet, siXaml, siNodedotjs, siGnu, siLinux, siJupyter,
+    siNumpy
 } from "simple-icons/icons";
 
 
@@ -41,6 +42,8 @@ export default {
         {name: 'React.js', icon: siReact, href: 'https://reactjs.org/'},
         {name: 'React Native', icon: siReact, href: 'https://reactnative.dev/'},
         {name: 'Svelte', img: svelte, href: 'https://svelte.dev/'},
+        {name: 'Numpy', icon: siNumpy, href: 'https://numpy.org'},
+        {name: 'Jupyter Notebook', icon: siJupyter, href: 'https://jupyter.org/'}
     ],
     Dev_Tools: [
         {name: 'Node.js', icon: siNodedotjs, href: 'https://nodejs.org/'},
@@ -55,17 +58,23 @@ export default {
         {name: 'Unity', icon: siUnity, href: 'https://unity.com/'}
     ],
     Relevant_Coursework: [
-        {name: 'Computer Organization'},
-        {name: 'Computer Systems and Networks'},
-        {name: 'Object Oriented Design & Analysis'},
+        {name: 'CS 3630: Intro to Perception and Robotics'},
+        {name: 'CS 3600: Intro to Artificial Intelligence'},
+        {name: 'ECE 2031: Digital Circuits and Design'},
+        {name: 'ISyE 3770: Statistics and Applications'},
+        {name: 'CS 3510: Design and Analysis of Algorithms'},
+        {name: 'CS 3210: Design of Operating Systems'},
+        {name: 'CS 2110: Computer Organization'},
+        {name: 'CS 2200: Computer Systems and Networks'},
+        {name: 'CS 2340: Object Oriented Design & Analysis'},
         {name: 'Object Oritented Programming'},
-        {name: 'Data Structures and Algorithms'},
+        {name: 'COMPSCI 61BL:Data Structures and Algorithms'},
         {name: 'Differential Calculus'},
         {name: 'Integral Calculus'},
-        {name: 'Multivariable Calculus'},
-        {name: 'Linear Algebra'},
-        {name: 'Discrete Mathematics'},
-        {name: 'Physics: Electricity and Magnetism'}
+        {name: 'MATH 04A: Multivariable Calculus'},
+        {name: 'MATH 1554: Linear Algebra'},
+        {name: 'CS 2050: Discrete Mathematics'},
+        {name: 'PHYS 2212: Physics — Electricity and Magnetism'}
 
     ],
     Creative: [
