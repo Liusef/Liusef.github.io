@@ -1,6 +1,9 @@
 import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
 import {siGithub} from "simple-icons/icons";
+
+import db from '../assets/proj/barrier.png'
+import nn from '../assets/proj/nn.png'
 import zm from '../assets/proj/zoom.png'
 import tspm from '../assets/proj/tgstickers.png'
 import gba from '../assets/proj/gba.png'
@@ -10,6 +13,36 @@ import git from '../assets/proj/gitlet.png'
 import lang from '../assets/proj/stats.png'
 
 export default [
+    {
+        img: db,
+        name: 'Distributed Barrier Algorithm',
+        subt: 'C (language), OpenMP, MPI',
+        sub2: 'Oct 2023',
+        desc: 'Developed a barrier algorithm in C to synchronize threads running across different nodes in a ' +
+            'datacenter. Uses the MCS Tree Barrier algorithm for improved performance on large distributed systems.',
+        // links: [
+        //     {
+        //         name: 'GitHub Repo',
+        //         icon: siGithub,
+        //         link: 'https://github.com/Liusef/TelegramStickerManager'
+        //     },
+        // ]
+    },
+    {
+        img: nn,
+        name: 'Vectorized Neural Network',
+        subt: 'Python, NumPy',
+        sub2: 'Sept 2023',
+        desc: 'Created a fully vectorized Multilayer Perceptron Neural Network with ReLU and Softmax layers and ' +
+            ' the SGD optimizer for a simple implementation while preserving performance. ',
+        // links: [
+        //     {
+        //         name: 'GitHub Repo',
+        //         icon: siGithub,
+        //         link: 'https://github.com/Liusef/TelegramStickerManager'
+        //     },
+        // ]
+    },
     {
         img: tspm,
         name: 'Telegram Sticker Pack Manager',

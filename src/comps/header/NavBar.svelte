@@ -1,16 +1,28 @@
 <script>
-    import links from '../../vars/Nav.js'
-    import {scrollToAnchor} from "../../utils.js";
+    import NavLink from "./NavLink.svelte"
 </script>
 
 
 <div class="flex-out">
 
-    {#each links as key}
-        <a on:click={() => scrollToAnchor(key)} class="white-link clickable allcaps">
-            {key}
-        </a>
-    {/each}
+    <NavLink anchor="#home">
+        HOME
+    </NavLink>
+    <NavLink anchor="#about">
+        ABOUT
+    </NavLink>
+    <NavLink anchor="#experience">
+        EXPERIENCE
+    </NavLink>
+    <NavLink anchor="#projects">
+        PROJECTS
+    </NavLink>
+    <NavLink anchor="#education">
+        EDUCATION
+    </NavLink>
+    <NavLink anchor="#skills">
+        SKILLS
+    </NavLink>
 
 </div>
 

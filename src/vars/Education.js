@@ -13,7 +13,7 @@ export default [
         desc: 'Currently an undergraduate studying Computer Science with threads in Intelligence and Sys/Arch.',
         adesc: [
             'Computer Science B.S.',
-            'Expected Graduation: Dec 2024',
+            'Expected Graduation: May 2025',
             'GPA: 4.0'
         ],
         links: [

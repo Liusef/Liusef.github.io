@@ -1,11 +1,27 @@
 import mn from '../assets/exp/mn.png'
 import eb from '../assets/exp/eb.png'
+import gt from '../assets/exp/geico.jpg'
 import lrt from '../assets/exp/lrt.jpg'
 import fl from '../assets/exp/thing.jpg'
 import wa from '../assets/webasset.svg'
 import globe from '../assets/globe.svg'
 
 export default [
+    {
+        img: gt,
+        name: 'GEICO Tech',
+        subt: 'Software Developer Intern',
+        sub2: 'Jun 2023 - Aug 2023',
+        desc: 'I worked with the Service Enablement team to audit the company\'s service info and to build a new ' +
+                'service portfolio to help keep service metadata accurate and up-to-date.',
+        links: [
+            {
+                name: 'GEICO Website',
+                img: globe,
+                link: 'https://geico.com'
+            }
+        ]
+    },
     {
         img: eb,
         name: 'Empathy Bytes',

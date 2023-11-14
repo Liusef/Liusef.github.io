@@ -1,7 +1,7 @@
 import {siMicrosoftoutlook, siLinkedin, siGithub} from 'simple-icons/icons'
 
 export default {
-    resume: 'https://1drv.ms/w/s!AuhKl9cjxYZ8vh9FH8lZ5gwZ-IUy?e=jg2hT7',
+    resume: 'https://1drv.ms/b/s!AuhKl9cjxYZ8g9B_iYNwd0-p4lzrOQ?e=ROzfeZ',
     social : {
         email: {
             name: 'E-Mail',

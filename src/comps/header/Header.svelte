@@ -2,215 +2,139 @@
     import src from '../../assets/icon.png';
     import NavBar from "./NavBar.svelte";
     import MobileNavBar from "./MobileNavBar.svelte";
-    import {fly} from 'svelte/transition'
-    import links from '../../vars/Nav.js'
-    import {scrollToAnchor, scrollToTop} from "../../utils.js";
+    import ReactiveComp from "../common/ReactiveComp.svelte";
 
     export let breakpointVh = 20
 
-    let vpHeight
-    let scroll
-    let scrolled
+    let vpHeight, scroll, scrolled
     let open = false
 
-    function vhToPx(val) {
-        return val * vpHeight / 100
-    }
+    const vhToPx = (val) => val * vpHeight / 100
 
-    $: scrolled = (scroll > vhToPx(breakpointVh) || scroll > vhToPx(breakpointVh));
-
+    $: scrolled = scroll > vhToPx(breakpointVh);
 </script>
 
 <svelte:window bind:scrollY={scroll} bind:outerHeight={vpHeight}/>
 
-<div>
-    <header class='title' class:scrolled>
-        <div class="title-container">
-            <div class='ldiv'>
-                <a class="clickable" on:click={() => {open = false; scrollToTop()}}>
-                    <img {src} class='logo-img' class:scrolled id="logo"/>
+<header class="col-center">
+    <!--This is a dumb workaround for the mobile stuff-->
+    <div class="title-dim header-effects" class:scrolled></div>
+
+    <div class="title title-dim" class:scrolled>
+        <div class="container" class:scrolled>
+            <div style:grid-column="1" style:text-align="left" style:width="100%" style:display="flex">
+                <a href="/" on:click={() => {open = false}} style:display="flex">
+                    <img {src} alt="Site Logo" class='logo-img' class:scrolled id="logo"/>
                 </a>
             </div>
-
-            <div class='rdiv' class:scrolled>
-                <div class="mobile-navbar">
-                    <MobileNavBar bind:open/>
-                </div>
-                <div class="navbar">
-                    <NavBar/>
+            <div style:grid-column="2">
+                <div style:display="flex" style:flex-direction="row-reverse">
+                    <ReactiveComp>
+                        <div slot="main">
+                            <NavBar/>
+                        </div>
+                        <div slot="alt">
+                            <MobileNavBar bind:open={open}/>
+                        </div>
+                    </ReactiveComp>
                 </div>
             </div>
         </div>
-    </header>
-</div>
-
-{#if open}
-    <div class="mobilemenu-out mobile-menu" transition:fly={{x: 150}}>
-            {#each links as key, i}
-                <div transition:fly={{x: 15, delay: 60 * i}} on:click={() => open = false}>
-                    <a on:click={() => scrollToAnchor(key)} class="white-link clickable h3 allcaps">
-                        {key.toUpperCase()}
-                    </a>
-                </div>
-            {/each}
     </div>
-{/if}
-
+</header>
 
 <style>
     :root {
-        --header-transition: all 0.3s cubic-bezier(0, 0.75, 0.25, 1);
-        --header-mobile-transition: all 0.3s cubic-bezier(0, 0.6, 0.4, 1);
-        --header-transition-delay: 0.02s;
+        --header-transition: all 0.3s cubic-bezier(0, 0.8, 0.5, 1);
 
-        --header-top-height:  6rem;
-        --header-scrolled-height: 4rem;
-        --header-top-img-margin: 1rem;
-        --header-scrolled-img-margin: 0.6rem;
-        --header-top-font-size: 1rem;
-        --header-scrolled-font-size: 1rem;
+        --header-height:  10rem;
+        --header-top-img-margin: 1.5rem;
+        --header-scrolled-img-margin: 0.5rem;
+        --header-font-size: 1.1rem;
 
         --header-background: #000000aa;
         --header-blur-amount: 6px;
     }
 
+    /*Applying transition to all elements in the header*/
     *{
         transition: var(--header-transition);
-        transition-delay: var(--header-transition-delay);
     }
 
+    /*Title bar layouting*/
     .title {
-        overflow: hidden;
-        position: fixed;
-        width: 100%;
-        top: 0;
         z-index: 10;
         display: flex;
         align-items: center;
-
-        height: var(--header-top-height);
-        background-color: transparent;
-        backdrop-filter: none;
     }
 
-    .title.scrolled {
-        height: var(--header-scrolled-height);
-        background-color: var(--header-background);
-        backdrop-filter: blur(var(--header-blur-amount));
-    }
-
-    .title-container {
-        z-index: 20;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform-style: preserve-3d;
-    }
-
-    .ldiv {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        width: 100%;
-        margin-left: 1rem;
-    }
-
-    .rdiv {
-        z-index: 25;
-        width: auto;
-        float: right;
-        margin-right: 2rem;
-        font-size: var(--header-top-font-size);
-        -webkit-backface-visibility: hidden;
-        -webkit-transform-style: preserve-3d;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-
-    .rdiv.scrolled {
-        font-size: var(--header-scrolled-font-size);
-    }
-
-    .logo-img {
-        height: calc(var(--header-top-height) - 2 * var(--header-top-img-margin));
-        margin-left: var(--header-top-img-margin);
-        -webkit-backface-visibility: hidden;
-        -webkit-transform-style: preserve-3d;
-        -webkit-transform: translate3d(0, 0, 0);
-        filter: drop-shadow(2px 2px 8px #00000044);
-    }
-
-    .logo-img.scrolled {
-        height: calc(var(--header-scrolled-height) - 2 * var(--header-scrolled-img-margin));
-        margin-left: var(--header-scrolled-img-margin);
-        filter: none;
-    }
-
-    .mobile-menu {
-        z-index: 8;
+    /*Title bar dimensions and misc behavior*/
+    .title-dim {
+        overflow: hidden;
         position: fixed;
+        box-sizing: border-box;
+        width: 100%;
         top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        white-space: nowrap;
-        background: black;
-
-        padding-top: var(--header-top-height);
-        padding-right: 3rem;
+        height: var(--header-height);
     }
 
-    .navbar {
-        display: block;
+    /*Reduce height of titlebar when scrolled*/
+    .title-dim.scrolled {
+        height: calc(var(--header-height) / 1.8);
+        width: calc(100% - 2*1rem);
+        margin: 1rem;
+        border-radius: 1rem;
     }
 
-    .mobile-navbar {
-        display: none;
+    /*Background effects to display when scrolled*/
+    .header-effects.scrolled {
+        z-index: 10;
+        background-color: var(--header-background);
+        backdrop-filter: blur(var(--header-blur-amount)) saturate(200%);
+        -webkit-backdrop-filter: blur(var(--header-blur-amount)) saturate(200%);
+        border: #ffffff44 1px solid;
     }
 
-    .mobilemenu-out {
-        display: none;
+    /*Grid container for left (logo) and right (buttons) sides of header*/
+    .container {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        margin: 0 3rem 0 1rem;
     }
 
-    @media (max-width: 700px)
-    {
+    .container.scrolled {
+        margin: 0 2rem 0 1rem;
+    }
 
-        .ldiv {
+    /*Style for logo image*/
+    .logo-img {
+        height: calc(var(--header-height) - 2 * var(--header-top-img-margin));
+        margin-left: var(--header-top-img-margin);
+        filter: drop-shadow(2px 2px 8px #00000044);
+        z-index: 50;
+
+        /*These help fix weird flashing issues on webkit and chromium*/
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+    }
+
+    /*Shrinks logo when scrolled*/
+    .logo-img.scrolled {
+        height: calc(var(--header-height) / 2.25 - var(--header-scrolled-img-margin));
+        margin-left: var(--header-scrolled-img-margin);
+    }
+
+    @media (max-width: 825px) {
+        .container {
             margin-left: 0;
-        }
-
-        .rdiv {
-            margin-right: 1.5rem;
-        }
-
-        .mobile-menu {
-            padding-right: 2.5rem;
-        }
-
-        .navbar {
-            display: none;
-        }
-
-        .mobile-navbar {
-            display: block;
-        }
-
-        .mobilemenu-out {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 3vh;
+            margin-right: 3rem;
         }
     }
 
-    @media only screen and (max-device-width: 700px) {
-        * {
-            transition: var(--header-mobile-transition);
-            transition-delay: var(--header-transition-delay);
-        }
-
-        .title.scrolled {
-            backdrop-filter: none;
+    @media (min-width: 1400px) {
+        .title-dim.scrolled {
+            width: 1300px;
         }
     }
 
