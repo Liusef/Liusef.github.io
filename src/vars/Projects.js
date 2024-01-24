@@ -2,6 +2,7 @@ import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
 import {siGithub} from "simple-icons/icons";
 
+import mr from '../assets/proj/mapreduce.png'
 import db from '../assets/proj/barrier.png'
 import nn from '../assets/proj/nn.png'
 import zm from '../assets/proj/zoom.png'
@@ -13,6 +14,21 @@ import git from '../assets/proj/gitlet.png'
 import lang from '../assets/proj/stats.png'
 
 export default [
+    {
+        img: mr,
+        name: 'MapReduce System',
+        subt: 'C++, CMake, gRPC',
+        sub2: 'Nov 2023 - Dec 2023',
+        desc: 'Implemented a MapReduce system to do highly parallelized, distributed, high reliability data processing. Written using C++ and gRPC' +
+               '  to ensure high performance and includes mechanisms to ensure reliability, even with dead nodes.',
+        // links: [
+        //     {
+        //         name: 'GitHub Repo',
+        //         icon: siGithub,
+        //         link: 'https://github.com/Liusef/TelegramStickerManager'
+        //     },
+        // ]
+    },
     {
         img: db,
         name: 'Distributed Barrier Algorithm',

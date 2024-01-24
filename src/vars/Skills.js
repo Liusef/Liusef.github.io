@@ -80,7 +80,10 @@ let rc = [
     {
         name: 'Computer Systems and Architecture',
         contents: [
+            {name: 'CS 6211: System Design for Cloud Computing'},
+            {name: 'CS 4240: Compilers, Interpreters, and Program Analyzers'},
             {name: 'CS 4210: Advanced and Distributed Systems'},
+            {name: 'CS 3220: Processor Design'},
             {name: 'CS 3210: Design of Operating Systems'},
             {name: 'CS 2200: Computer Systems and Networks'},
             {name: 'CS 2110: Computer Organization'},
@@ -99,9 +102,10 @@ let rc = [
     {
         name: 'Computing Theory and Foundations',
         contents: [
+            {name: 'CS 4510: Automata and Complexity Theory'},
             {name: 'CS 3510: Design and Analysis of Algorithms'},
             {name: 'CS 2340: Object Oriented Design & Analysis'},
-            {name: 'COMPSCI 61BL:Data Structures and Algorithms'},
+            {name: 'COMPSCI 61BL: Data Structures and Algorithms'},
         ]
     },
     {
