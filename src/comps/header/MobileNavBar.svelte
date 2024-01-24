@@ -9,33 +9,33 @@
 
 
 {#if open}
-    <div class="mobile-menu mobilemenu-out" transition:fly={{x: 150}}>
-        <div transition:fly={{x: 15, delay: 80 * 1}} on:click={() => open = false}>
+    <div class="mobile-menu mobilemenu-out" transition:fly|global={{x: 150}}>
+        <div transition:fly|global={{x: 15, delay: 80 * 1}} on:click={() => open = false}>
             <NavLink anchor="#home">
                 HOME
             </NavLink>
         </div>
-        <div transition:fly={{x: 15, delay: 80 * 2}} on:click={() => open = false}>
+        <div transition:fly|global={{x: 15, delay: 80 * 2}} on:click={() => open = false}>
             <NavLink anchor="#about">
                 ABOUT
             </NavLink>
         </div>
-        <div transition:fly={{x: 15, delay: 80 * 3}} on:click={() => open = false}>
+        <div transition:fly|global={{x: 15, delay: 80 * 3}} on:click={() => open = false}>
             <NavLink anchor="#experience">
                 EXPERIENCE
             </NavLink>
         </div>
-        <div transition:fly={{x: 15, delay: 80 * 4}} on:click={() => open = false}>
+        <div transition:fly|global={{x: 15, delay: 80 * 4}} on:click={() => open = false}>
             <NavLink anchor="#projects">
                 PROJECTS
             </NavLink>
         </div>
-        <div transition:fly={{x: 15, delay: 80 * 5}} on:click={() => open = false}>
+        <div transition:fly|global={{x: 15, delay: 80 * 5}} on:click={() => open = false}>
             <NavLink anchor="#education">
                 EDUCATION
             </NavLink>
         </div>
-        <div transition:fly={{x: 15, delay: 80 * 5}} on:click={() => open = false}>
+        <div transition:fly|global={{x: 15, delay: 80 * 5}} on:click={() => open = false}>
             <NavLink anchor="#skills">
                 SKILLS
             </NavLink>
