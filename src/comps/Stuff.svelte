@@ -80,7 +80,7 @@
         </div>
         
         <div id={key} on:wheel={(e) => handleWheel(e, key)}>
-                <div class="splide__track no-overscroll">
+                <div class="splide__track no-overscroll" style:overflow="visible">
                     <div class="splide__list">
                         {#each vars[key] as info}
                             <InfoCard {info}/>
