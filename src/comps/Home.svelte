@@ -9,7 +9,7 @@
             <p class="h1 half-ls">
                 I'm Joseph
             <p class="text half-ls">
-                I'm an undergraduate studying Computer Science at the Georgia Institute of Technology.
+                I'm a graduate student studying Computer Systems at the Georgia Institute of Technology.
             </p>
         </div>
         <div class="social-spot">

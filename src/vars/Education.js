@@ -1,19 +1,38 @@
 import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
 import gt from '../assets/edu/gt.jpg'
+import gt2 from '../assets/edu/gt2.jpg'
 import ucb from '../assets/edu/ucb.png'
 import wvc from '../assets/edu/wvc.jpg'
 import lhs from '../assets/edu/lhs.jpg'
 
 export default [
     {
+        img: gt2,
+        name: 'Georgia Tech',
+        subt: 'Atlanta, GA',
+        desc: 'Currently a masters student studying Computer Science with a concentration in Systems.',
+        adesc: [
+            'Computer Science M.S.',
+            'Expected Graduation: December 2025',
+            'GPA: 4.0'
+        ],
+        links: [
+            {
+                name: 'Georgia Tech Website',
+                img: wa,
+                link: 'https://gatech.edu/'
+            },
+        ]
+    },
+    {
         img: gt,
         name: 'Georgia Tech',
         subt: 'Atlanta, GA',
-        desc: 'Currently an undergraduate studying Computer Science with threads in Intelligence and Sys/Arch.',
+        desc: 'Studied Computer Science with threads in Intelligence and Sys/Arch.',
         adesc: [
             'Computer Science B.S.',
-            'Expected Graduation: May 2025',
+            'Graduated: May 2024',
             'GPA: 4.0'
         ],
         links: [
@@ -65,7 +84,7 @@ export default [
         subt: 'San Jose, CA',
         desc: 'Attend Lynbrook High School for general studies.',
         adesc: [
-            'Graduated: Jun 2021',
+            'Graduated: June 2021',
             'Unweighted GPA: 3.969'
         ],
         links: [

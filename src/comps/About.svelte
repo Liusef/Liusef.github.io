@@ -4,9 +4,8 @@
             About Me
         </div>
         <p class="text">
-            Hello! I'm Joseph Liu, a third year undergraduate student at Georgia Tech with concentrations in
-            Systems/Architecture and Artificial Intelligence. I'm passionate and interested in computer systems,
-            distributed & high performance computing, and machine learning.
+            Hello! I'm Joseph Liu, a rising computer science masters student at Georgia Tech with a concentration in Computer Systems. 
+            I'm passionate and interested in computer systems, distributed & high performance computing, and machine learning.
         <p class="text">
             Through my coursework and projects I've gained lots of experience with different techniques and
             technologies. Through my systems coursework I've learned about OS design, virtualization, and many aspects

@@ -20,10 +20,22 @@ body {
     background-color: #151b25;
 }
 
+.slide-border-elem {
+    padding: calc((10vw - 2rem)/2)
+}
+
 @media (max-width: 700px) {
     .body {
         padding: 3rem 2rem;
     }
+
+    .slide-border-elem {
+        padding: calc((2rem - 2rem)/2)
+    }
+}
+
+.hidden {
+    display: hidden;
 }
 
 .more-padding {
@@ -73,6 +85,22 @@ body {
 .tac {
     text-align: center;
 }
+
+.fw-2 {font-weight: 200}
+
+.fw-3 {font-weight: 300}
+
+.fw-4 {font-weight: 400}
+
+.fw-5 {font-weight: 500}
+
+.fw-6 {font-weight: 600}
+
+.fw-7 {font-weight: 700}
+
+.fw-8 {font-weight: 800}
+
+.fw-9 {font-weight: 900}
 
 .link {
     text-decoration: none;
@@ -178,6 +206,12 @@ body {
 }
 
 
-.swiper-wrapper {
-    align-items: center;
+.splide__track {
+    overflow: visible;
 }
+
+.no-overscroll {
+    overscroll-behavior: contain;
+    touch-action: none;
+}
+
