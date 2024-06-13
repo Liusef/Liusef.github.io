@@ -65,7 +65,7 @@
 {#each Object.keys(vars) as key}
     <div class={`body splide splide-${key}`} id={key.toLowerCase()} style:padding-bottom="1rem" style:overflow="hidden" >
                
-        <!-- <div class='title-flex'>
+        <div class='title-flex'>
             <div class="title-left">
                 <p class="h2">
                     {key}
@@ -78,7 +78,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)" width="0.875rem" viewBox="0 0 14 8" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 0.292894C0.683416 -0.0976306 1.31658 -0.0976315 1.70711 0.292892L7.00002 5.58579L12.2929 0.292894C12.6834 -0.0976306 13.3166 -0.0976315 13.7071 0.292892C14.0976 0.683416 14.0976 1.31658 13.7071 1.70711L7.70713 7.70711C7.51959 7.89464 7.26524 8 7.00002 8C6.7348 8 6.48045 7.89464 6.29291 7.70711L0.292894 1.70711C-0.0976306 1.31658 -0.0976315 0.683419 0.292892 0.292894Z" fill="white"></path></svg>
                 </button>
             </div>
-        </div> -->
+        </div>
         
         <div id={key} on:wheel={(e) => handleWheel(e, key)}>
                 <div class="splide__track" style:overflow="visible">
