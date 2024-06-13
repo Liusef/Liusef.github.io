@@ -206,12 +206,3 @@ body {
 }
 
 
-.splide__track {
-    overflow: visible;
-}
-
-.no-overscroll {
-    overscroll-behavior: contain;
-    touch-action: none;
-}
-
