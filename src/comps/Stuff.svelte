@@ -33,15 +33,15 @@
     const cooldown_ms = 250
     let prev = 0
     const handleWheel = (e, key) => {
-        // let ctime = (new Date()).getTime()
-        // if (prev + cooldown_ms > ctime) {return }
-        // if (Math.abs(e.deltaX) < Math.abs(e.deltaY) || e.deltaX == 0) {
-        //     return 
-        // }
-        // let dir
-        // if (e.deltaX > 0) {dir = '>'} else {dir = '<'}
-        // bindings[key].go(dir)
-        // prev = ctime
+        let ctime = (new Date()).getTime()
+        if (prev + cooldown_ms > ctime) {return }
+        if (Math.abs(e.deltaX) < Math.abs(e.deltaY) || e.deltaX == 0) {
+            return 
+        }
+        let dir
+        if (e.deltaX > 0) {dir = '>'} else {dir = '<'}
+        bindings[key].go(dir)
+        prev = ctime
     }
 
     onMount(() => {
