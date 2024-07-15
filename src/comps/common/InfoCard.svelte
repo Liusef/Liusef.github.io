@@ -6,7 +6,17 @@
 
 <div class='splide__slide'>
     <div class="outer grey-bg">
-        <div style:background-image={`url(${info.img})`} class="img"></div>
+        {#if info.img}
+            <div style:background-image={`url(${info.img})`} class="img"></div>
+        {:else}
+            <div class="video-wrapper img">
+                <video autoplay loop muted>
+                    <source src={info.src} type={info.type}/>
+                    <track kind="captions"/>
+                </video>
+            </div>
+        {/if}
+
         <div class="inner">
             <div class="h3" style="line-height: 1em; margin-bottom: 0.25rem">
                 {info.name}
@@ -71,6 +81,36 @@
 
     .inner {
         margin: 1.5rem 1.25rem;
+    }
+
+    .video-wrapper {
+        /* Telling our absolute positioned video to 
+        be relative to this element */
+        position: relative;
+
+        width: 400px;
+        height: 200px;
+
+        /* Will not allow the video to overflow the 
+        container */
+        overflow: hidden;
+
+        /* Centering the container's content vertically 
+        and horizontally */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .img {

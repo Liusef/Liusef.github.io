@@ -2,11 +2,32 @@ import mn from '../assets/exp/mn.png'
 import eb from '../assets/exp/eb.png'
 import gt from '../assets/exp/geico.jpg'
 import lrt from '../assets/exp/lrt.jpg'
+import hp from '../assets/exp/hpe.mp4'
 import fl from '../assets/exp/thing.jpg'
 import wa from '../assets/webasset.svg'
 import globe from '../assets/globe.svg'
 
 export default [
+    {
+        src: hp,
+        type: 'video/mp4',
+        name: 'Hewlett Packard Enterprise',
+        subt: 'Software Engineer Intern (Systems)',
+        sub2: 'Jun 2024 - Aug 2024',
+        desc: 'I worked with a team to develop both static and dynamic analysis tools to enforce logging standards across HPE\'s GreenLake organization.',
+        links: [
+            {
+                name: 'HPE Website',
+                img: globe,
+                link: 'https://hpe.com'
+            },
+            {
+                name: 'GreenLake Website',
+                img: globe,
+                link: 'https://greenlake.hpe.com'
+            }
+        ]
+    },
     {
         img: gt,
         name: 'GEICO Tech',

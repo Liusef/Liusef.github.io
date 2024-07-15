@@ -15,12 +15,11 @@
             PyTorch. Through projects, I've also gained experience with web and app technologies like Node.js, React.js,
             React Native, Svelte, and more.
         <p class="text">
-            In the summer of 2023, I interned as a software engineer at GEICO, where worked with the Service Enablement
-            team. During my time there, I learned more about how companies take advantage of cloud computing and some
-            basics with technologies like Kubernetes, Microsoft Azure, and .NET Web Services.
-            I audited the company's service portfolio and began work on building a new service portfolio which would
-            make it easier to keep service metadata accurate and up-to-date and have better integrations with ITSM and
-            other services.
+            In the summer of 2024, I interned as a software engineer at HPE in the GreenLake organization. 
+            During my time there, I learned more about how companies take advantage of cloud computing services, and
+            how cloud computing tools and cloud native apps are designed and developed.
+            I worked with a couple other interns to create a suite of dynamic and static analysis tools for other developers 
+            to check their code against the HPE GreenLake developer standards. 
         <p class="text">
             Beyond computer science and software development, I have experience with media technologies and creative
             applications. Previously, I served as the VP of Media at Lynbrook Robotics, where I learned creative tools

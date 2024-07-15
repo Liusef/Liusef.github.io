@@ -11,7 +11,7 @@ export default [
         img: gt2,
         name: 'Georgia Tech',
         subt: 'Atlanta, GA',
-        desc: 'Currently a masters student studying Computer Science with a concentration in Systems.',
+        desc: 'Currently a masters student studying Computer Science with a concentration in Computer Systems.',
         adesc: [
             'Computer Science M.S.',
             'Expected Graduation: December 2025',

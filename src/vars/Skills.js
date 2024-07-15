@@ -24,17 +24,19 @@ import {
     siAdobelightroomclassic,
     siAdobepremierepro,
     siAdobeaftereffects, siUnity, siHtml5, siWebauthn, siDotnet, siXaml, siNodedotjs, siGnu, siLinux, siJupyter,
-    siNumpy, siCloudflare, siPytorch, siGoogle, siAzureartifacts, siAzuredevops, siMicrosoftazure
+    siNumpy, siCloudflare, siPytorch, siGoogle, siAzureartifacts, siAzuredevops, siMicrosoftazure, siGo, siCplusplus
 } from "simple-icons/icons";
 
 
 export default {
     Computing_Languages: [
-        {name: 'Java', img: java, href: 'https://java.com'},
         {name: 'Python', img: py, href: 'https://python.org/'},
-        {name: 'C#', img: cs, href: 'https://dotnet.microsoft.com/'},
+        {name: 'Golang', icon: siGo, href: 'https://go.dev/'},
+        {name: 'C++', icon: siCplusplus, href: 'https://isocpp.org//'},
         {name: 'C', icon: siC, href: 'https://www.iso.org/standard/74528.html'},
+        {name: 'C#', img: cs, href: 'https://dotnet.microsoft.com/'},
         {name: 'JavaScript', img: js, href: 'https://developer.mozilla.org/en-US/docs/Web/javascript'},
+        {name: 'Java', img: java, href: 'https://java.com'},
     ],
     Technologies: [
         {name: '.NET Core', img: dotnet, href: 'https://dotnet.microsoft.com/'},
@@ -112,6 +114,7 @@ let rc = [
         name: 'Additional Relevant Coursework',
         contents: [
             {name: 'MATH 04A: Multivariable Calculus'},
+            {name: 'MATH 3012: Applied Combinatorics'},
             {name: 'MATH 1554: Linear Algebra'},
         ]
     }

@@ -2,7 +2,10 @@ import globe from "../assets/globe.svg";
 import wa from '../assets/webasset.svg'
 import {siGithub} from "simple-icons/icons";
 
-import mr from '../assets/proj/mapreduce.png'
+import gtfs from '../assets/proj/gtfs.jpg'
+import su from '../assets/proj/smolurl.png'
+import mr from '../assets/proj/mr.jpg'
+import nfv from '../assets/proj/nfv.jpg'
 import db from '../assets/proj/barrier.png'
 import nn from '../assets/proj/nn.png'
 import zm from '../assets/proj/zoom.png'
@@ -15,19 +18,40 @@ import lang from '../assets/proj/stats.png'
 
 export default [
     {
+        img: gtfs,
+        name: 'Transit Wayfinding',
+        subt: 'Rust (Language), JavaScript, WebAssembly (WASM), GTFS, Protobuf',
+        sub2: 'Jun 2024 - Present',
+        desc: 'A web application to pull real time transit data using the General Transit Feed Spec to create simulated wayfinding displays to suggest improvements to agency leaders',
+        links: [
+            {
+                name: 'GitHub Repo',
+                icon: siGithub,
+                link: 'https://github.com/Liusef/gtfs-screens'
+            },
+        ]
+    },
+    {
+        img: su,
+        name: 'SmolURL - A URL Shortener',
+        subt: '.NET, C#, React, JavaScript, Azure Functions, Azure CosmosDB, Redis',
+        sub2: 'Apr 2024',
+        desc: 'A fully serverless, cloud native URL shortener to shorten long URLs so they are easier to send to others and remember.',
+    },
+    {
         img: mr,
         name: 'MapReduce System',
-        subt: 'C++, CMake, gRPC',
-        sub2: 'Nov 2023 - Dec 2023',
-        desc: 'Implemented a MapReduce system to do highly parallelized, distributed, high reliability data processing. Written using C++ and gRPC' +
-               '  to ensure high performance and includes mechanisms to ensure reliability, even with dead nodes.',
-        // links: [
-        //     {
-        //         name: 'GitHub Repo',
-        //         icon: siGithub,
-        //         link: 'https://github.com/Liusef/TelegramStickerManager'
-        //     },
-        // ]
+        subt: 'Golang, Protobuf, gRPC, etcd',
+        sub2: 'Mar 2024 - Apr 2024',
+        desc: 'Implemented a MapReduce system to do highly parallelized, distributed, high reliability data processing. Written using Golang and gRPC' +
+               '  to ensure high performance and includes mechanisms to ensure reliability, even with dead worker or master nodes.',
+    },
+    {
+        img: nfv,
+        name: 'Network Function Virtualization Manager',
+        subt: 'Python, OpenFlow, Ryu SDN Controller',
+        sub2: 'Feb 2024 - Mar 2024',
+        desc: 'Created an OpenFlow router to manage virtualized network functions (ie. Firewall or NAT) for easy failover and effortless scaling when network traffic increases or decreases.',
     },
     {
         img: db,
@@ -36,13 +60,6 @@ export default [
         sub2: 'Oct 2023',
         desc: 'Developed a barrier algorithm in C to synchronize threads running across different nodes in a ' +
             'datacenter. Uses the MCS Tree Barrier algorithm for improved performance on large distributed systems.',
-        // links: [
-        //     {
-        //         name: 'GitHub Repo',
-        //         icon: siGithub,
-        //         link: 'https://github.com/Liusef/TelegramStickerManager'
-        //     },
-        // ]
     },
     {
         img: nn,
@@ -51,13 +68,6 @@ export default [
         sub2: 'Sept 2023',
         desc: 'Created a fully vectorized Multilayer Perceptron Neural Network with ReLU and Softmax layers and ' +
             ' the SGD optimizer for a simple implementation while preserving performance. ',
-        // links: [
-        //     {
-        //         name: 'GitHub Repo',
-        //         icon: siGithub,
-        //         link: 'https://github.com/Liusef/TelegramStickerManager'
-        //     },
-        // ]
     },
     {
         img: tspm,
